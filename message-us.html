@@ -4,13 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>First Website | Home</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/message.css" />
         <link rel="stylesheet" href="./css/reset.css" />
+        <title>First Website | Message Us</title>
     </head>
     <body>
         <header>
@@ -18,10 +14,12 @@
                 <nav class="nav">
                     <img src="./img/logo.png" alt="Logo RevoU" class="logo" />
                     <div class="group-btn">
-                        <a href="./index.html" class="active">Home</a>
+                        <a href="./index.html">Home</a>
                         <a href="./profile.html">Our Profile</a>
                         <a href="./portfolio.html">Portfolio</a>
-                        <a href="./message-us.html">Message Us</a>
+                        <a href="./message-us.html" class="active"
+                            >Message Us</a
+                        >
                     </div>
                     <div class="dropdown">
                         <div class="menu-btn" onclick="openMenu(this)">
@@ -30,10 +28,12 @@
                             <div class="bar3"></div>
                         </div>
                         <div id="dropdownContent" class="dropdown-content">
-                            <a href="./index.html" class="active">Home</a>
+                            <a href="./index.html">Home</a>
                             <a href="./profile.html">Our Profile</a>
                             <a href="./portfolio.html">Portfolio</a>
-                            <a href="./message-us.html">Message Us</a>
+                            <a href="./message-us.html" class="active"
+                                >Message Us</a
+                            >
                         </div>
                     </div>
                 </nav>
@@ -41,86 +41,39 @@
         </header>
 
         <main>
-            <section id="hero">
-                <div class="hero-container">
-                    <div class="hero-title">
-                        <h1>
-                            Hi <span id="title-name"></span>, Welcome To Website
-                        </h1>
-                        <h3>This is my first Website</h3>
-                    </div>
-                    <div class="hero-img"></div>
-                </div>
-            </section>
-            <section id="content">
-                <div class="content-container">
-                    <div class="title">
-                        <h1>Our Headquarters</h1>
-                    </div>
-                    <div class="content-main">
-                        <div class="content">
-                            <img
-                                class="content-img"
-                                src="https://source.unsplash.com/mAxA2OmTmKA"
-                                alt="Jakarta's Mascot"
-                            />
-                            <div class="overlay">
-                                <p class="content-text">Jakarta</p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <img
-                                class="content-img"
-                                src="https://source.unsplash.com/30h0YG29W30"
-                                alt="Bandung's Flyover"
-                            />
-                            <div class="overlay">
-                                <p class="content-text">Bandung</p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <img
-                                class="content-img"
-                                src="https://source.unsplash.com/yVwiHXoTrnU"
-                                alt="Surabaya's Landmark"
-                            />
-                            <div class="overlay">
-                                <p class="content-text">Surabaya</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section id="form">
                 <div class="form-container">
                     <div class="title">
                         <h1>Message Us</h1>
                     </div>
                     <div class="forms">
-                        <form action="">
-                            <label for="name">Name</label>
+                        <form>
+                            <label for="name">Name:</label>
                             <input
                                 type="text"
                                 id="name"
                                 class="input"
                                 name="name"
-                                placeholder="Input your name here"
+                                value=""
+                                placeholder="Your name here"
                             />
                             <span></span>
                             <span id="warning-name"></span>
 
                             <label for="dob">Date of birth:</label>
-                            <input
-                                type="date"
-                                id="dob"
-                                class="input"
-                                name="dob"
-                                placeholder="dd/mm/yyyy"
-                            />
-                            <span></span>
-                            <span id="warning-dob"></span>
+                            <div class="input-with-icon">
+                                <input
+                                    type="date"
+                                    id="dob"
+                                    name="dob"
+                                    value=""
+                                    placeholder="dd/mm/yyyy"
+                                />
+                                <span></span>
+                                <span id="warning-dob"></span>
+                            </div>
 
-                            <label for="gender">Gender</label>
+                            <label for="gender">Gender:</label>
                             <div id="gender" class="gender-selection">
                                 <input
                                     type="radio"
@@ -140,10 +93,10 @@
                             <span></span>
                             <span id="warning-gender"></span>
 
-                            <label for="msg">Message</label>
+                            <label for="msg">Message:</label>
                             <textarea
-                                name="msg"
                                 id="msg"
+                                name="msg"
                                 placeholder="Enter your message here.."
                             ></textarea>
                             <span></span>
@@ -160,7 +113,7 @@
                                 <span id="result-today"></span>:
                                 <span id="result-time"></span>
                             </h3>
-                            <div class="felx-col">
+                            <div class="flex-col">
                                 <h3>Name: <span id="result-name"></span></h3>
                                 <h3>
                                     Date of birth: <span id="result-dob"></span>
@@ -183,7 +136,8 @@
                 </nav>
             </section>
         </footer>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-        <script src="./js/index.js"></script>
+        <script src="./js/message.js"></script>
     </body>
 </html>

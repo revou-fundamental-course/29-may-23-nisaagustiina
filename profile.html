@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/profile.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <title>First Website | Profile</title>
+    </head>
+    <body>
+        <header>
+            <section id="header">
+                <nav class="nav">
+                    <img src="./img/logo.png" alt="logo RevoU" class="logo" />
+
+                    <div class="group-btn">
+                        <a href="./index.html">Home</a>
+                        <a href="./profile.html" class="active">Our Profile</a>
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./message-us.html">Message Us</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="menu-btn" onclick="openMenu(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div id="dropdownContent" class="dropdown-content">
+                            <a href="./index.html">Home</a>
+                            <a href="./profile.html" class="active"
+                                >Our Profile</a
+                            >
+                            <a href="./portfolio.html">Portfolio</a>
+                            <a href="./message-us.html">Message Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="hero">
+                    <div class="overlay"></div>
+                    <div class="hero-text">
+                        <h1>Welcome to My Website</h1>
+                        <p>Discover the latest trends in web development</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-us">
+                <div class="container">
+                    <h2>About Us</h2>
+                    <p>
+                        We are a leading web development company that
+                        specializes in creating custom websites for businesses
+                        of all sizes. With over 10 years of experience in the
+                        industry, we have a proven track record of delivering
+                        high-quality websites that meet our clients' needs.
+                    </p>
+                    <p>
+                        Our team of experts includes web designers, developers,
+                        and marketers who work together to create websites that
+                        not only look great but also perform well in search
+                        engines and convert visitors into customers.
+                    </p>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="service">
+                        <div class="icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="50"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="m18 16 4-4-4-4"></path>
+                                <path d="m6 8-4 4 4 4"></path>
+                                <path d="m14.5 4-5 16"></path>
+                            </svg>
+                        </div>
+                        <div class="wrapper">
+                            <h3>Web Development</h3>
+                            <p>
+                                We create custom websites that are tailored to
+                                your business needs and goals. Our websites are
+                                designed to look great on all devices and are
+                                optimized for search engines.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="50"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z"
+                                ></path>
+                                <path
+                                    d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7"
+                                ></path>
+                                <path d="M14.5 17.5 4.5 15"></path>
+                            </svg>
+                        </div>
+                        <div class="wrapper">
+                            <h3>Web Design</h3>
+                            <p>
+                                We design visually appealing websites that are
+                                easy to navigate and provide a great user
+                                experience. Our designs are based on the latest
+                                trends and best practices in web design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="50"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="m3 11 18-5v12L3 14v-3z"></path>
+                                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                            </svg>
+                        </div>
+                        <div class="wrapper">
+                            <h3>Digital Marketing</h3>
+                            <p>
+                                We can help you reach your target audience
+                                through a variety of digital marketing channels,
+                                including SEO, PPC, social media, and email
+                                marketing. Our goal is to help you generate more
+                                leads and sales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="footer">
+                <nav class="nav-footer">
+                    <p>&copy; 2023 RevoU. All rights reserved.</p>
+                </nav>
+            </section>
+        </footer>
+
+        <script src="./js/project.js"></script>
+    </body>
+</html>
